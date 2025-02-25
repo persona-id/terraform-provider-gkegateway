@@ -12,6 +12,7 @@ import (
 
 	compute "cloud.google.com/go/compute/apiv1"
 	"cloud.google.com/go/compute/apiv1/computepb"
+	"github.com/googleapis/gax-go/v2/apierror"
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
@@ -135,6 +136,11 @@ func (d *BackendServiceDataSource) Read(ctx context.Context, req datasource.Read
 		}
 
 		if err != nil {
+			// Ignore 404 errors for projects that don't exist yet.
+			if e, ok := err.(*apierror.APIError); ok && e.HTTPCode() == 404 {
+				return
+			}
+
 			resp.Diagnostics.AddError("Unable to iterate over forwarding rules", fmt.Sprintf("Error calling Google API: %+v", err))
 			return
 		}
