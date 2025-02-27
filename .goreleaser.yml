@@ -59,7 +59,4 @@ release:
   # If you want to manually examine the release before its live, uncomment this line:
   # draft: true
 changelog:
-  filters:
-    exclude:
-    - "Merge pull request"
-  use: git
+  use: github
