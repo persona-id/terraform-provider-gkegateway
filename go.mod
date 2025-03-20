@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.23.6
 
 require (
-	cloud.google.com/go/compute v1.34.1
+	cloud.google.com/go/compute v1.35.0
 	github.com/googleapis/gax-go/v2 v2.14.1
 	github.com/hashicorp/terraform-plugin-framework v1.14.1
 	github.com/hashicorp/terraform-plugin-go v0.26.0
