@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/compute v1.38.0
 	github.com/googleapis/gax-go/v2 v2.14.2
 	github.com/hashicorp/terraform-plugin-framework v1.15.0
-	github.com/hashicorp/terraform-plugin-go v0.27.0
+	github.com/hashicorp/terraform-plugin-go v0.28.0
 	github.com/hashicorp/terraform-plugin-testing v1.13.1
 	google.golang.org/api v0.234.0
 )
