@@ -5,9 +5,9 @@ The GKE Gateway provider is used to lookup GCP load balancing resources created 
 ## Requirements
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads) >= 1.0
-- [Go](https://golang.org/doc/install) >= 1.22
+- [Go](https://golang.org/doc/install) >= 1.26
 
-## Building The Provider
+## Building the Provider
 
 1. Clone the repository
 1. Enter the repository directory
@@ -31,7 +31,7 @@ go mod tidy
 
 Then commit the changes to `go.mod` and `go.sum`.
 
-## Using the provider
+## Using the Provider
 
 ```terraform
 data "gkegateway_backend_service" "global_example" {

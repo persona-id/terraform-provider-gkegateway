@@ -1,8 +1,6 @@
 module github.com/persona-id/terraform-provider-gkegateway
 
-go 1.23.0
-
-toolchain go1.23.6
+go 1.26
 
 require (
 	cloud.google.com/go/compute v1.39.0
