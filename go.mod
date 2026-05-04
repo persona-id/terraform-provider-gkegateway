@@ -3,7 +3,7 @@ module github.com/persona-id/terraform-provider-gkegateway
 go 1.26
 
 require (
-	cloud.google.com/go/compute v1.60.0
+	cloud.google.com/go/compute v1.61.0
 	github.com/googleapis/gax-go/v2 v2.22.0
 	github.com/hashicorp/terraform-plugin-framework v1.19.0
 	github.com/hashicorp/terraform-plugin-go v0.31.0
