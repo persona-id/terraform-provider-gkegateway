@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	cloud.google.com/go/compute v1.67.0
-	github.com/googleapis/gax-go/v2 v2.24.0
+	github.com/googleapis/gax-go/v2 v2.24.1
 	github.com/hashicorp/terraform-plugin-framework v1.19.0
 	github.com/hashicorp/terraform-plugin-go v0.31.0
 	github.com/hashicorp/terraform-plugin-testing v1.16.0
